@@ -11,6 +11,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  color: #564333;
 }
 
 *, *::before, *::after {
@@ -23,7 +24,7 @@ body {
 }
 
 .masthead {
-  background-color: #d3d3d3;
+  background-color: #e5c2a5;
 }
 
 .nav {
@@ -38,7 +39,7 @@ body {
 
 .nav ul a {
   text-decoration: none;
-  color: black;
+  color: #564333;
 }
 
 .nav li {
@@ -79,6 +80,11 @@ img {
   width: 100%;
 }
 
+.img-flex {
+  width: 100%;
+  display: block;
+}
+
 .location,
 .menu,
 .contact,
@@ -87,11 +93,92 @@ footer {
 }
 
 .menu {
-  background-color: #d3d3d3;
+  background-color: #e5c2a5;
 }
 
 footer {
-  background-color: #d3d3d3;
+  background-color: #e5c2a5;
   padding-top: .25em;
   padding-bottom: .25em;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.4;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  p {
+    max-width: 600px;
+    margin: .25rem auto .5rem;
+    text-align: center;
+  }
+
+  .location,
+  .menu,
+  .contact {
+    text-align: center;
+  }
+
+  .location img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .menu img {
+    max-width: 300px;
+  }
+
+  .contact img {
+    max-width: 150px;
+  }
+
+  footer {
+    display: flex;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .contact img {
+    position: relative;
+    float: left;
+    width: 5em;
+    margin: 0 4em 1em;
+  }
+
+  .contact {
+    overflow: hidden;
+  }
+
+  .contact p {
+    position: absolute;
+    text-align: left;
+    margin: 1rem auto 1rem 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
